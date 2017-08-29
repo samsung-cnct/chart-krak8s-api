@@ -1,0 +1,16 @@
+name: krak8s-api
+version: ${CHART_VER}-${CHART_REL}
+description: A REST based API for managing Kraken and Kubernetes actions.
+keywords:
+- kraken
+- kubernetes
+- helm
+home: https://github.com/samsung-cnct/krak8s/
+sources:
+- https://github.com/samsung-cnct/krak8s/
+- https://github.com/samsung-cnct/git-archivist
+maintainers:
+- name: Richard Sostheim - Samsung CNCT
+  email: richard.sostheim@gmail.com
+- name: Michael Venezia - Samsung CNCT
+  email: mvenezia@gmail.com
