@@ -9,6 +9,7 @@ home: https://github.com/samsung-cnct/krak8s/
 sources:
 - https://github.com/samsung-cnct/krak8s/
 - https://github.com/samsung-cnct/git-archivist
+- https://github.com/samsung-cnct/chart-krak8s-api
 maintainers:
 - name: Richard Sostheim - Samsung CNCT
   email: richard.sostheim@gmail.com
