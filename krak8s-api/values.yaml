@@ -5,11 +5,13 @@ username: imauser
 krak8s:
   image: quay.io/samsung_cnct/krak8s
   imageTag: latest
-  imagePullPolicy: Always
+  imagePullPolicy: IfNotPresent
   imagePullSecret:
+  # set this to your cloud provider to support cloud-provider-credentials
+  # (currently only supports "aws")
   cloudProvider: none
   awsCredentials:
-    # Each of the following values must be base64 encoded
+    # The result will be base64 encoded for you, just use normal values
     id:
     key:
     region:
@@ -27,9 +29,18 @@ krak8s:
 
 gitArchivist:
   image: quay.io/samsung_cnct/git-archivist
-  imageTag: latest
-  imagePullPolicy: Always
+  imageTag: 0.2.0
+  imagePullPolicy: IfNotPresent
   imagePullSecret:
+
+  git:
+    # All are required
+    account: samsung-cnct
+    email: cnct.api.robot@gmail.com
+    repository: 
+    server: github.com
+    username: api-robot
+    password:
 
   ## Configure resource requests and limits
   ## ref: http://kubernetes.io/docs/user-guide/compute-resources/
